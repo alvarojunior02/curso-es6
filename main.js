@@ -1,7 +1,11 @@
-const usuario = { nome: "Alvaro" };
+function teste(x) {
+    let y = 2;
 
-console.log(usuario)
+    if (x > 5) {
+        let y = 4;
 
-usuario.nome = "Joao";
+        console.log(x, y);
+    }
+}
 
-console.log(usuario)
+teste(10);
