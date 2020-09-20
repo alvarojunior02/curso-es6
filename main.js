@@ -1,26 +1,21 @@
-const usuarios = [
-    { nome: 'Diego', idade: 23, empresa: 'Rocketseat' },
-    { nome: 'Gabriel', idade: 15, empresa: 'Rocketseat' },
-    { nome: 'Lucas', idade: 30, empresa: 'Facebook' },
-];   
+// 3.1
+const arr = [1, 2, 3, 4, 5];
+arr.map(item => item + 10);
 
-// map
-const idades = usuarios.map(item => item.idade);
+// 3.2
+// Dica: Utilize uma constante pra function
+const usuario = { nome: 'Alvaro', idade: 23 };
+const mostraIdade = usuario => usuario.idade;
+mostraIdade(usuario);
 
-console.log(idades);
+// 3.3
+// Dica: Utilize uma constante pra function
+const nome = "Alvaro Junior";
+const idade = 23;
+const mostraUsuario = (nome = 'Alvaro', idade = 18) => ({ nome, idade });
+mostraUsuario(nome, idade);
+mostraUsuario(nome);
 
-//filter
-const usuariosFilter = usuarios.filter(item => {
-    return item.empresa === 'Rocketseat' && item.idade > 18
-})
+// 3.4
 
-console.log(usuariosFilter);
-
-// find
-const usuarioFind = usuarios.find(item => item.empresa === 'Google')
-
-console.log(usuarioFind);
-
-// map e filter
-const usuarios2 = usuarios.map(users => ({...users, idade : users.idade * 2})).filter(users => users.idade <= 50)
-console.log(usuarios2);
+const promise = () => new Promise((resolve, reject) => resolve()); 
