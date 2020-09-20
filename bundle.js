@@ -1,7 +1,11 @@
 "use strict";
 
-// TEMPLATE LITERALS
-var nome = "Alvaro";
-var idade = 18; //console.log("Meu nome é " + nome + " e tenho " + idade + " anos");
-
-console.log("Meu nome \xE9 ".concat(nome, " e tenho ").concat(idade, " anos"));
+// OBJECT SHORT SYNTAX
+var nome = 'Alvaro';
+var idade = 18;
+var usuario = {
+  nome: nome,
+  idade: idade,
+  empresa: 'IFMT'
+};
+console.log(usuario);
