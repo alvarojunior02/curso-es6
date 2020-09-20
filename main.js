@@ -1,4 +1,9 @@
-const usuario = 'Alvaro';
+const nome = 'Alvaro';
 const idade = 18;
+const usuario = {
+    nome,
+    idade,
+    cidade: 'Cuiaba',
+};
 
-console.log(`O usuário ${usuario} possui ${idade} anos`);
+console.log(usuario);
